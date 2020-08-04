@@ -1,0 +1,75 @@
+<html>
+    <head>
+    
+    <title> Login page</title>
+
+<!--        <link rel="stylesheet" href="css/style.css">-->
+        <link rel="stylesheet" href="css/style_ad.css">
+        <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+
+    </head>
+    <body>
+    <nav> 
+        <input type="checkbox" id="check">
+        <label for="check" class="checkbtn" >
+        <i class="fas fa-bars"></i>
+        </label>
+        <label class="logo">DesignX</label>
+        <ul>
+            <li><a class="active" href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="facility.html">Services</a></li>
+            <li><a href="ser_reg.html">Service Registration</a></li>
+             <li><a href="admin_log.html">Admin Login</a></li> 
+        </ul>        
+        </nav>
+       <form name="login">
+ <div class="login-box">
+        <h1> Login </h1>
+        <div class="textbox">
+            <i class="fa fa-user" aria-hidden="true"></i>
+            <input type="text" placeholder="Username" name="userid">
+            </div>
+            
+            <div class="textbox">
+            <i class="fa fa-lock" aria-hidden="true"></i>
+            <input type="password" placeholder="Password" name="pass">
+            </div>
+            <input class="btn" type="button" onclick="checkone(this.form)" name="" value=" Sign In">
+            
+        </div>
+        </form>
+        <script language="javascript">
+        
+        function checkone(form)
+            {
+                if(form.userid.value=="resource" && form.pass.value=="resource123")
+                    {
+                        window.open('admin_portal.html')
+                    }
+                else {
+                    alert("Error username and password")
+                }
+            }
+        
+        
+        </script>
+        <section>
+        
+        </section>
+
+            
+           
+        
+       
+           </body>
+</html>
+
+
+
+
+
+
+
+
+
